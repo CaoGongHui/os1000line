@@ -44,7 +44,7 @@ void printf(const char *fmt, ...) {
         int value = va_arg(vargs, int);
         for (int i = 7; i >= 0; i--) {
           int nibble = (value >> (i * 4)) & 0xf;
-          putchar("01234566789abcdef"[nibble]);
+          putchar("0123456789abcdef"[nibble]);
         }
       }
       }
